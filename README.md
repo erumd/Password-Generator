@@ -89,7 +89,7 @@ This homework is graded based on the following criteria:
 
 <a href='https://erumd.github.io/Password-Generator/'> https://erumd.github.io/Password-Generator/ </a>
 
-I used Visual Studio code to build by website. Resources I used to help with the writing code are Stackoverflow, w3schools, and MDN developer mozilla.
+I used Visual Studio code to build by website. Resources I used to help with the writing code are Stackoverflow, w3schools, and MDN developer mozilla. I used list of Password Special Characters from the OWASP Foundation] https://www.owasp.org/index.php/Password_special_characters.
 
 
 - - -

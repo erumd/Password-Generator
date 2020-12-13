@@ -119,4 +119,4 @@ function finalRandomPassword(params) {
 generateBtn.addEventListener("click", writePassword());
 
 
-// result.innerText = generateBtn ()
+// result.innerText = generateBtn ();
