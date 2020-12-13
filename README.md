@@ -38,9 +38,9 @@ THEN the password is either displayed in an alert or written to the page
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo]
-<img src= "./Assets/03-javascript-homework-demo.png" alt='password generator demo'>
-<img scr>
+Password generator demo
+<img src= "./03-javascript-homework-demo.png" alt='password generator demo' width="150" height="150">
+"./Assets/03-javascript-homework-demo.png"
 
 ## Grading Requirements
 
@@ -84,9 +84,12 @@ This homework is graded based on the following criteria:
 
 
 ## Review
-https://github.com/erumd
 
-https://erumd.github.io/Password-Generator/
+<a href="https://github.com/erumd"> Visit https://github.com/erumd</a>
+
+
+<a href='https://erumd.github.io/Password-Generator/'> Visit https://erumd.github.io/Password-Generator/ </a>
+
 
 
 
