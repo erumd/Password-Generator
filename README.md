@@ -85,10 +85,10 @@ This homework is graded based on the following criteria:
 
 ## Review
 
-<a href="https://github.com/erumd"> Visit https://github.com/erumd</a>
+<a href="https://github.com/erumd"> https://github.com/erumd</a>
 
 
-<a href='https://erumd.github.io/Password-Generator/'> Visit https://erumd.github.io/Password-Generator/ </a>
+<a href='https://erumd.github.io/Password-Generator/'> https://erumd.github.io/Password-Generator/ </a>
 
 
 
