@@ -1,14 +1,33 @@
+;
+
+
+// tutor help
+document.getElementById("generate").addEventListener("click", function(
+  prompt= "Choose a length of at least 8 characters and no more than 128 characters" )
+
+// prompt1
+// click= prompt ("Choose a length of at least 8 characters and no more than 128 characters");
+// document.addEventListener("click", function(
+//   click= prompt ("Choose a length of at least 8 characters and no more than 128 characters")
+// ){
+
+
+// prompt2 Character types to include in the password
+// Choose lowercase, uppercase, numeric, and/or special characters
+var randomLower;
+var randomUpper;
+var randomNumber;
+var randomSymbol; 
+
+
+
+
+
+
+
+
 // Assignment Code
-var generateBtn = document.querySelector("#generate");
-
-// click button them get promot
-
-click= prompt ("Choose a length of at least 8 characters and no more than 128 characters");
-
-document.addEventListener("click", function(
-  click= prompt ("Choose a length of at least 8 characters and no more than 128 characters")
-){
-// document.getElementById("demo").innerHTML;
+var generateBtn = document.querySelector("#generate")
 
 
 // Write password to the #password input

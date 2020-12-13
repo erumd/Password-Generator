@@ -87,10 +87,9 @@ This homework is graded based on the following criteria:
 
 <a href="https://github.com/erumd"> https://github.com/erumd</a>
 
-
 <a href='https://erumd.github.io/Password-Generator/'> https://erumd.github.io/Password-Generator/ </a>
 
-
+I used Visual Studio code to build by website. Resources I used to help with the writing code are Stackoverflow, w3schools, and MDN developer mozilla.
 
 
 - - -
