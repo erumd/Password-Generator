@@ -47,19 +47,7 @@ console.log (generatePassword);
 
   // promptMe (writePassword (passLength, passLowerCase, passUpperCase, passNumber, passCharacters))
 
-  
-
     //
-
-    // function to general char. NOT SURE???????????????????
-    function general(chars) {
-      var randomGenerate = Math.floor(Math.random() * chars.length);
-          chars.substring(randomGenerate, +1);
-          console.log (randomPassword);
-          return randomPassword;
-     }
-
-
     // function randomLower () {
     //   passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
     //   var randomPassword= '';
@@ -126,23 +114,15 @@ console.log (generatePassword);
       
     }
 
-    var passwordText = document.querySelector("#password");
+     // function to general char. NOT SURE???????????????????
+     function general(chars) {
+      var randomGenerate = Math.floor(Math.random() * chars.length);
+          chars.substring(randomGenerate, +1);
+          console.log (randomPassword);
+          return randomPassword;
+     }
 
-    passwordText.value = password;
-
-    // const typesCount = passLength +passLowerCase +passUpperCase + passNumber +passCharacters;
-    // console.log ('typesCount');
-
-    // const typesArray = [passLength, passLowerCase, passUpperCase, passNumber, passCharacters];
-    // console.log ('typesArray');
-
-
-    // added variables for the for loop
-  var chars= randomLower +randomUpper+ randomNumber +randomSymbol;
-    finalRandomPassword= ''
-  
-
-  // need to use a combination of conditionals, arrays, and for loops
+// need to use a combination of conditionals, arrays, and for loops
   // loop
   // loop to generate password characters
   var charLength;
@@ -152,18 +132,71 @@ console.log (generatePassword);
     console.log[i];
   }
   // return finalRandomPassword;
-  console.log (finalRandomPassword);
+  // console.log (finalRandomPassword);
 
+    // added variables for the for loop
+    var chars= randomLower +randomUpper+ randomNumber +randomSymbol;
+    finalRandomPassword= ''
+
+
+
+
+// DO I NED THIS?
+    function writePassword () {
+     var passwordText = document.querySelector("#password");
+      passwordText.value = password;
+
+
+      function writePassword() {
+        var password = generatePassword();
+        var passwordText = document.querySelector('#password');
+        passwordText.value = password;
+      }
+      console.log (writePassword)
+
+      // need help to write  call back 
+      function generatePassword(password) {
+      }
+// trying to generate password
+  for (var i=0; i <length; i) {
+    if (passLowerCase=== true) {
+      password +=(randomLower());
+      i++;
+    }
+    if (passUpperCase=== true) {
+      password += (randomUpper());
+      i++;
+    } 
+    if (passNumber=== true) {
+      password += (randomNumber());
+      i++;
+    } 
+    if (passCharacters=== true) {
+      password += (randomSymbol());
+      i++;
+    } 
+  }
+
+  passwordEl.textContent = password; 
+
+    // const typesCount = passLength +passLowerCase +passUpperCase + passNumber +passCharacters;
+    // console.log ('typesCount');
+
+    // const typesArray = [passLength, passLowerCase, passUpperCase, passNumber, passCharacters];
+    // console.log ('typesArray');
+
+
+    
+  
+  
+
+  
   // not sure if i need it at end again. i have in the beginning
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
-  passwordText.value = password;
-}
-console.log (writePassword)
+
+
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// generateBtn.addEventListener("click", writePassword);
 
-// }
+}
