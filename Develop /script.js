@@ -69,9 +69,7 @@ console.log (generatePassword);
     //   return randomPassword;
     //   console.log (randomPassword);
     // }
-
-
-    // tutor
+    // tutor shorten randomLower
     function randomLower () {
       passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
       var randomPassword = general(passLowerCase);
@@ -87,8 +85,7 @@ console.log (generatePassword);
     //   return randomPassword;
     //   console.log (randomPassword);
     // }
-
-    // tutor
+    // tutor shorten randomUpper
     function randomUpper() {
       passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
       var randomPassword = general (passUpperCase);
@@ -105,22 +102,28 @@ console.log (generatePassword);
     //   return randomPassword;
     //   console.log (randomPassword);
     // }
-
-    // tutor 
+    // tutor shorten randomNumber 
     function randomNumber() {
       passNumber= '0123456789';
       var randomPassword = general (passNumber);
       console.log (randomNumber);
       
     }
-    function randomSymbol () {
+    // function randomSymbol () {
+    //   passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+    //   var randomPassword; "";
+    //   var randomGenerate = Math.floor(Math.random() * passCharacters.length);
+    //   passCharacters.substring(randomPassword, +1);
+    //   console.log (randomPassword);
+    //   return randomPassword;
+    //   console.log (randomPassword);
+    // }
+    // Tutor shorten randomSymbol
+    function randomSymbol() {
       passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-      var randomPassword; "";
-      var randomGenerate = Math.floor(Math.random() * passCharacters.length);
-      passCharacters.substring(randomPassword, +1);
-      console.log (randomPassword);
-      return randomPassword;
-      console.log (randomPassword);
+      var randomSymbol = general (passCharacter);
+      console.log (randomSymbol);
+      
     }
 
     var passwordText = document.querySelector("#password");
@@ -135,19 +138,21 @@ console.log (generatePassword);
 
 
     // added variables for the for loop
-  var chars= (randomPassword +randomLower +randomUpper+ randomNumber +randomSymbol) {
+  var chars= randomLower +randomUpper+ randomNumber +randomSymbol;
     finalRandomPassword= ''
-  }
+  
 
   // need to use a combination of conditionals, arrays, and for loops
   // loop
   // loop to generate password characters
-  for (let i = 0; i < char.length; i++) {
+  var charLength;
+  let i= 0
+  for (let i = 0; i < charLength; i++) {
     var finalRandomPassword= [Math.floor(Math.random() * Math.floor(chars.length))];
     console.log[i];
   }
-
-  return finalRandomPassword;
+  // return finalRandomPassword;
+  console.log (finalRandomPassword);
 
   // not sure if i need it at end again. i have in the beginning
 // Write password to the #password input
@@ -156,6 +161,7 @@ function writePassword() {
   var passwordText = document.querySelector('#password');
   passwordText.value = password;
 }
+console.log (writePassword)
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
