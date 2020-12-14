@@ -11,8 +11,8 @@ The following image shows the web application's appearance and functionality:
 Password generator demo
 <img src= "./03-javascript-homework-demo.png" alt='password generator demo' width="150" height="150">
 "./Assets/03-javascript-homework-demo.png"
-<img src= "images/passgen.jpg" alt= "webpage view" width= "400 height="200">
-<img src = "images/passgen2.jpg" alt= "webpage view" width= "100" height="150"> >
+<img src= "images/passgen.jpg" alt= "webpage view" width= "400" height="200">
+<img src = "images/passgen2.jpg" alt= "webpage view" width= "100" height="150"> 
 
 
 
