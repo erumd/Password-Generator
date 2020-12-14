@@ -1,18 +1,24 @@
 
-var passLowerCase= [abcdefghijklmnopqrstuvwxyz];
-  var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
-  var passNumber= [0123456789]
-  var passCharacters=  [ "!", "', "#", "$" "%",  "&", "(",  ")", "*", "+", ",", "-", ".", "/", ":", ";" "<" "=" ">" "?" "@" "[" "\" "]" "^"_`{|}~"]
-
+var passLowerCase= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+// var passLowerCase= [abcdefghijklmnopqrstuvwxyz]
+var passUpperCase= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+  // var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
+  
+  var passNumber= ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var passCharacters = ["$", "%", "&", "+", ",", "-", "."];
+  // var passCharacters=  [ "!", "', "#", "$" "%",  "&", "(",  ")", "*", "+", ",", "-", ".", ":", ";" "<" "=" ">" "?" "@" "[" "\" "]" "^"_`{|}~"]
+// var passCharacters=  "!"#$%&'()*+,-./:;<=>?@[\]^_`{|} ";
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  // generatePassword();
   var passwordText = document.querySelector('#password');
   passwordText.value = password;
   return;
 }
+
+var password= "";
 
 // Ask the user for details and return a string
 // function generatePassword() {
@@ -49,7 +55,7 @@ function writePassword() {
 
     //
 // maybe write array 
-Array [ passLowerCase, passUpperCase, passNumber, passCharacters]; 
+ 
 
 
 
@@ -72,6 +78,9 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
       console.log (randomPassword);
     }
 
+    // passLowerCase [0];
+    // console.log (passLowerCase);
+
     // function randomUpper () {
     //   passLowerCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
     //   var randomPassword; "";
@@ -85,7 +94,7 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
     function randomUpper() {
       // passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
       var randomPassword = passUpperCase [Math.floor(Math.random()) * passUpperCase.length];
-      
+      return randomPassword;
       console.log (randomPassword);
     }
 
@@ -103,6 +112,7 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
     function randomNumber() {
       // passNumber= '0123456789';
       var randomPassword = passNumber [Math.floor(Math.random()) * passNumber.length];
+      return randomPassword;
       console.log (randomNumber);
       
     }
@@ -119,6 +129,7 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
     function randomSymbol() {
       // passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
       var randomSymbol = general (passCharacter);
+      return randomPassword;
       console.log (randomSymbol);
       
     }
@@ -136,11 +147,11 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
   // loop
   // loop to generate password characters
 
-  var charLength;
-  for (let i = 0; i < charLength; i++) {
-    var finalRandomPassword= [Math.floor(Math.random() * Math.floor(chars.length))];
-    console.log (finalRandomPassword);
-  }
+  // var charLength;
+  // for (let i = 0; i < charLength; i++) {
+  //   var finalRandomPassword= [Math.floor(Math.random() * Math.floor(chars.length))];
+  //   console.log (finalRandomPassword);
+  // }
   // return finalRandomPassword;
   // console.log (finalRandomPassword);
 
@@ -187,7 +198,9 @@ Array [ passLowerCase, passUpperCase, passNumber, passCharacters];
     } 
   }
 
-generatePassword ();
+// generatePassword ();
+
+
 
   // 
 
