@@ -1,11 +1,4 @@
-// var passLength= prompt ("How long do you want your password to be? Pick between 8- 128 characters");
 
-
-// 1st way stack overflow
-// document.querySelector ("#generate").addEventListener('click', function ()) {
-//   var passLength = prompt("How long do you want your password to be? Pick between 8- 128 characters");
-//   alert (passLength);
-// }
 var passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
   var passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
   var passNumber= '0123456789'
@@ -13,48 +6,54 @@ var passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
 
 var generateBtn = document.querySelector("#generate");
 
+// Write password to the #password input
 function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector('#password');
+  passwordText.value = password;
 }
 
+// Ask the user for details and return a string
+function generatePassword() {
   // Prompts and Confirm password guidelines 
-  document.querySelector('#generate').addEventListener('click', promptMe);
-  function promptMe() {
+  // document.querySelector('#generate').addEventListener('click', promptMe);
+  // function promptMe() {
       var passLength = parseInt (prompt("How long do you want your password to be? Pick from 8- 128 characters"));
-      // if else statement needs to go after passLength or will not work. 
-      if (isNAN (passLength)) {
-        alert ("You have to enter a number|");
+      // if else statement needs to go after passLength or will not work for within 8-128. 
+      if (!Number.isInteger(passLength)) {
+        alert ("You have to enter a number");
+        // need return promtMe so user does not have to go through the confirm messages
+        return generatePassword();
       }
       if (passLength <8 || passLength >128 ) {
         alert ("Pick password length from 8-128 characters") 
+        return promptMe();
       } else {
       var passLowerCase = confirm ('Do you want "lower case" in your password? Press OK to confirm and cancel to not include.');
       var passUpperCase = confirm ('Do you want "UPPER case" in your password? Press OK to confirm and cancel to not include. ');
       var passNumber = confirm ('Do you want "numbers" in your password? Press OK to confirm and cancel to not include.');
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
       }
-      // writePassword ( "passLength, passLowerCase, passUpperCase, passNumber, passCharacters;
   }
-console.log (promptMe);
+console.log (generatePassword);
 
   // var generateBtn = document.querySelector("#generate")
-  
-
-
   // Write password to the #password input
   function writePassword( passLength, passLowerCase, passUpperCase, passNumber, passCharacters) {
     // var password = generatePassword();
     console.log ('writePassword');
+
   }
 
-    // password values 
-    // let values = "ABCDEFGHIJKLMNOPQRSTUVWZYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
-    // let password= "";
+  // promptMe (writePassword (passLength, passLowerCase, passUpperCase, passNumber, passCharacters))
+
+  
 
     // loop to generate password characters
-    for (let i = 0; i < passCharacters.length; i++) {
-      console.log[i];
+    // for (let i = 0; i < passCharacters.length; i++) {
+    //   console.log[i];
       
-    }
+    // }
 
     // function to generate password in array 
     
