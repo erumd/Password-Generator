@@ -1,6 +1,5 @@
 
 var passLowerCase= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-// var passLowerCase= [abcdefghijklmnopqrstuvwxyz]
 var passUpperCase= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   // var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
   
@@ -62,62 +61,41 @@ for (var i=0; i <passLength; i) {
     password += (randomSymbol());
     i++;
   } 
+  password= password.slice (0,passLength);
   console.log (password);
-}
+ }
+} //end generate loop 
 
-
-
-    } //end of generate function 
-
-  
-    // tutor shorten randomLower
     function randomLower () {
-      // passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
-      var randomPassword = passLowerCase [Math.floor(Math.random()) * passLowerCase.length];
+      var randomPassword = passLowerCase [Math.floor(Math.random() * passLowerCase.length)];
       console.log (randomPassword);
-      return randomPassword;
-      
+      return randomPassword; 
     }
 
-  
-    // tutor shorten randomUpper
     function randomUpper() {
-      // passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
-      var randomPassword = passUpperCase [Math.floor(Math.random()) * passUpperCase.length];
+      var randomPassword = passUpperCase [Math.floor(Math.random() * passUpperCase.length)];
       console.log (randomPassword);
       return randomPassword;
-      
     }
     
-    // tutor shorten randomNumber 
     function randomNumber() {
-      // passNumber= '0123456789';
-      var randomPassword = passNumber [Math.floor(Math.random()) * passNumber.length];
+      var randomPassword = passNumber [Math.floor(Math.random() * passNumber.length)];
       console.log (randomNumber);
-      return randomPassword;
-      
-      
+      return randomPassword; 
     }
    
-    // Tutor shorten randomSymbol
     function randomSymbol() {
-      // passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-      var randomPassword = passCharacters [Math.floor(Math.random()) * passCharacters.length];
+      var randomPassword = passCharacters [Math.floor(Math.random() * passCharacters.length)];
       console.log (randomSymbol);
       return randomPassword;
-      
-      
     }
-
-
-
-
-  //end of generating function 
 
   generateBtn.addEventListener("click", writePassword);
 
 
-    
+    // __________________________________________________________________________________
+    // MY hard work adn mistakes*************************************************
+    // 
   // Write password to the #password input
   // function writePassword( passLength, passLowerCase, passUpperCase, passNumber, passCharacters) {
     // var password = generatePassword();
@@ -239,4 +217,4 @@ for (var i=0; i <passLength; i) {
 // Add event listener to generate button
 
 
-// }
+//
