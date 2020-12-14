@@ -6,38 +6,38 @@
 //   var passLength = prompt("How long do you want your password to be? Pick between 8- 128 characters");
 //   alert (passLength);
 // }
+var passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
+  var passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
+  var passNumber= '0123456789'
+  var passCharacters=  " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
 var generateBtn = document.querySelector("#generate");
 
 function writePassword() {
+}
 
-
-  // 2nd way 
+  // Prompts and Confirm password guidelines 
   document.querySelector('#generate').addEventListener('click', promptMe);
   function promptMe() {
-      var passLength = prompt("How long do you want your password to be? Pick between 8- 128 characters");
+      var passLength = parseInt (prompt("How long do you want your password to be? Pick from 8- 128 characters"));
+      // if else statement needs to go after passLength or will not work. 
+      if (isNAN (passLength)) {
+        alert ("You have to enter a number|");
+      }
+      if (passLength <8 || passLength >128 ) {
+        alert ("Pick password length from 8-128 characters") 
+      } else {
       var passLowerCase = confirm ('Do you want "lower case" in your password? Press OK to confirm and cancel to not include.');
       var passUpperCase = confirm ('Do you want "UPPER case" in your password? Press OK to confirm and cancel to not include. ');
       var passNumber = confirm ('Do you want "numbers" in your password? Press OK to confirm and cancel to not include.');
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
+      }
       // writePassword ( "passLength, passLowerCase, passUpperCase, passNumber, passCharacters;
   }
 console.log (promptMe);
 
-
-  // restricting less than 8 
-  // if (passCharacters) {
-  //   =parseInt (prompt "Enter length")
-  // } else {
-  // }
-  // loop to take user input and generate password 
-  // include letters can NOT be included in length 
-  // Assignment Code
   // var generateBtn = document.querySelector("#generate")
-  var passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
-  var passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
-  var passNumber= '0123456789'
-  var passCharacters=  " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  
 
 
   // Write password to the #password input
@@ -60,7 +60,7 @@ console.log (promptMe);
     
     function randomLower () {
       passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
-      var randomPassword= "";
+      var randomPassword= '';
       var randomGenerate = Math.floor(Math.random() * passLowerCase.length);
       passLowerCase.substring(randomGenerate, +1);
       console.log (randomPassword);
@@ -71,7 +71,7 @@ console.log (promptMe);
 
     function randomUpper () {
       passLowerCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
-      var randomPassword;
+      var randomPassword; "";
       var randomGenerate = Math.floor(Math.random() * passLowerCase.length);
       passUpperCase.substring(randomPassword, +1);
       console.log (randomPassword);
@@ -82,17 +82,17 @@ console.log (promptMe);
 
     function randomNumber () {
       passNumber= '0123456789';
-      var randomPassword;
+      var randomPassword; "";
       var randomGenerate = Math.floor(Math.random() * passNumber.length);
       passNumber.substring(randomPassword, +1);
       console.log (randomPassword);
       return randomPassword;
       console.log (randomPassword);
-    // }
+    }
 
-    function randomNumber () {
+    function randomSymbol () {
       passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
-      var randomPassword;
+      var randomPassword; "";
       var randomGenerate = Math.floor(Math.random() * passCharacters.length);
       passCharacters.substring(randomPassword, +1);
       console.log (randomPassword);
@@ -119,4 +119,4 @@ console.log (promptMe);
 
 generateBtn.addEventListener("click", writePassword)
 
-}
+
