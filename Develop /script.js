@@ -1,8 +1,8 @@
 
-var passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
-  var passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
-  var passNumber= '0123456789'
-  var passCharacters=  " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var passLowerCase= [abcdefghijklmnopqrstuvwxyz];
+  var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
+  var passNumber= [0123456789]
+  var passCharacters=  [ "!", "', "#", "$" "%",  "&", "(",  ")", "*", "+", ",", "-", ".", "/", ":", ";" "<" "=" ">" "?" "@" "[" "\" "]" "^"_`{|}~"]
 
 var generateBtn = document.querySelector("#generate");
 
@@ -11,6 +11,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
   passwordText.value = password;
+  return;
 }
 
 // Ask the user for details and return a string
@@ -36,18 +37,24 @@ function writePassword() {
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
       }
   }
-console.log (generatePassword);
 
-  // var generateBtn = document.querySelector("#generate")
+  
   // Write password to the #password input
-  function writePassword( passLength, passLowerCase, passUpperCase, passNumber, passCharacters) {
+  // function writePassword( passLength, passLowerCase, passUpperCase, passNumber, passCharacters) {
     // var password = generatePassword();
-    console.log ('writePassword');
-  }
+    // console.log ('writePassword');
+  // }
 
   // promptMe (writePassword (passLength, passLowerCase, passUpperCase, passNumber, passCharacters))
 
     //
+// maybe write array 
+Array [ passLowerCase, passUpperCase, passNumber, passCharacters]; 
+
+
+
+
+
     // function randomLower () {
     //   passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
     //   var randomPassword= '';
@@ -59,8 +66,9 @@ console.log (generatePassword);
     // }
     // tutor shorten randomLower
     function randomLower () {
-      passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
-      var randomPassword = general(passLowerCase);
+      // passLowerCase= 'abcdefghijklmnopqrstuvwxyz';
+      var randomPassword = passLowerCase [Math.floor(Math.random()) * passLowerCase.length];
+      return randomPassword;
       console.log (randomPassword);
     }
 
@@ -75,8 +83,9 @@ console.log (generatePassword);
     // }
     // tutor shorten randomUpper
     function randomUpper() {
-      passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
-      var randomPassword = general (passUpperCase);
+      // passUpperCase= 'ABCDEFGHIJKLMNOPQRSTUVWZYZ';
+      var randomPassword = passUpperCase [Math.floor(Math.random()) * passUpperCase.length];
+      
       console.log (randomPassword);
     }
 
@@ -92,8 +101,8 @@ console.log (generatePassword);
     // }
     // tutor shorten randomNumber 
     function randomNumber() {
-      passNumber= '0123456789';
-      var randomPassword = general (passNumber);
+      // passNumber= '0123456789';
+      var randomPassword = passNumber [Math.floor(Math.random()) * passNumber.length];
       console.log (randomNumber);
       
     }
@@ -108,55 +117,56 @@ console.log (generatePassword);
     // }
     // Tutor shorten randomSymbol
     function randomSymbol() {
-      passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+      // passCharacters= " !'#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
       var randomSymbol = general (passCharacter);
       console.log (randomSymbol);
       
     }
 
      // function to general char. NOT SURE???????????????????
-     function general(chars) {
-      var randomGenerate = Math.floor(Math.random() * chars.length);
-          chars.substring(randomGenerate, +1);
-          console.log (randomPassword);
-          return randomPassword;
-     }
+    //  function general(chars) {
+    //   var randomGenerate = Math.floor(Math.random() * chars.length);
+    //       chars.substring(randomGenerate, +1);
+    //       console.log (randomPassword);
+    //       return randomPassword;
+    //  }
+
 
 // need to use a combination of conditionals, arrays, and for loops
   // loop
   // loop to generate password characters
+
   var charLength;
-  let i= 0
   for (let i = 0; i < charLength; i++) {
     var finalRandomPassword= [Math.floor(Math.random() * Math.floor(chars.length))];
-    console.log[i];
+    console.log (finalRandomPassword);
   }
   // return finalRandomPassword;
   // console.log (finalRandomPassword);
 
     // added variables for the for loop
-    var chars= randomLower +randomUpper+ randomNumber +randomSymbol;
-    finalRandomPassword= ''
-
-
-
+    // var chars= randomLower +randomUpper+ randomNumber +randomSymbol;
+    // finalRandomPassword= ''
 
 // DO I NED THIS?
-    function writePassword () {
-     var passwordText = document.querySelector("#password");
-      passwordText.value = password;
+    // function writePassword () {
+    //  var passwordText = document.querySelector("#password");
+    //   passwordText.value = password;
 
-
-      function writePassword() {
-        var password = generatePassword();
-        var passwordText = document.querySelector('#password');
-        passwordText.value = password;
-      }
-      console.log (writePassword)
+    //   function writePassword() {
+    //     var password = generatePassword();
+    //     var passwordText = document.querySelector('#password');
+    //     passwordText.value = password;
+    //   }
+    //   console.log (writePassword)
 
       // need help to write  call back 
-      function generatePassword(password) {
-      }
+      // function generatePassword(password) {
+        // return;
+      // }
+      
+      
+
 // trying to generate password
   for (var i=0; i <length; i) {
     if (passLowerCase=== true) {
@@ -177,7 +187,9 @@ console.log (generatePassword);
     } 
   }
 
-  passwordEl.textContent = password; 
+generatePassword ();
+
+  // 
 
     // const typesCount = passLength +passLowerCase +passUpperCase + passNumber +passCharacters;
     // console.log ('typesCount');
@@ -199,4 +211,4 @@ console.log (generatePassword);
 // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
 
-}
+// }
