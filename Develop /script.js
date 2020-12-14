@@ -3,10 +3,10 @@ var passLowerCase= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", 
 var passUpperCase= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   // var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
   
-  var passNumber= ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  var passCharacters = ["$", "%", "&", "+", ",", "-", "."];
-  // var passCharacters=  [ "!", "', "#", "$", "%",  "&", "(",  ")", "*", "+", "-", ".", ":", ";" "<" "=" ">" "?" "@" "[" "\" "]" "^"_`{|}~"]
-// var passCharacters=  "!"#$%&'()*+,-./:;<=>?@[\]^_`{|} ";
+  var passNumber= ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+  // var passCharacters = ["$", "%", "&", "+", ",", "-", "."];
+  var passCharacters=  [ "!", "'", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", ":", ";", "<", "=", ">", "?", "@", "[", "^", "|",]
+
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
@@ -16,7 +16,6 @@ function writePassword() {
   passwordText.value = password;
   return;
 }
-
 var password= "";
 
 // Ask the user for details and return a string
@@ -42,22 +41,21 @@ var password= "";
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
       }
   
-
 // trying to generate password
-for (var i=0; i <passLength; i) {
-  if (passLowerCase=== true) {
+  for (var i=0; i <passLength; i) {
+    if (passLowerCase=== true) {
     password +=(randomLower());
     i++;
   }
-  if (passUpperCase=== true) {
+    if (passUpperCase=== true) {
     password += (randomUpper());
     i++;
   } 
-  if (passNumber=== true) {
+    if (passNumber=== true) {
     password += (randomNumber());
     i++;
   } 
-  if (passCharacters=== true) {
+    if (passCharacters=== true) {
     password += (randomSymbol());
     i++;
   } 
@@ -83,7 +81,6 @@ for (var i=0; i <passLength; i) {
       console.log (randomNumber);
       return randomPassword; 
     }
-   
     function randomSymbol() {
       var randomPassword = passCharacters [Math.floor(Math.random() * passCharacters.length)];
       console.log (randomSymbol);
