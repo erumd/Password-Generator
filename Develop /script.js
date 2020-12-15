@@ -27,13 +27,22 @@ var password= "";
         alert ("Pick password length from 8-128 characters") 
         // need return to main prompt so user does not have to go through the confirm messages
         return generatePassword();
-      } else {
+      // } else {
+      // var passLowerCase = confirm ('Do you want "lower case" in your password? Press OK to confirm and cancel to not include.');
+      // var passUpperCase = confirm ('Do you want "UPPER case" in your password? Press OK to confirm and cancel to not include. ');
+      // var passNumber = confirm ('Do you want "numbers" in your password? Press OK to confirm and cancel to not include.');
+      // var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
+
+    } else {
       var passLowerCase = confirm ('Do you want "lower case" in your password? Press OK to confirm and cancel to not include.');
       var passUpperCase = confirm ('Do you want "UPPER case" in your password? Press OK to confirm and cancel to not include. ');
       var passNumber = confirm ('Do you want "numbers" in your password? Press OK to confirm and cancel to not include.');
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
-      }
-  
+          if (passLowerCase && passUpperCase && passNumber && passCharacters ===false) {
+            alert ("You must pick at least 1 criteria")
+            return generatePassword();
+          }
+    }
 // trying to generate password
   for (var i=0; i <passLength; i) {
     if (passLowerCase=== true) {
