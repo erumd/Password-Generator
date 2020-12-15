@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 html,
 body,
 .wrapper {
@@ -125,8 +126,13 @@ button[disabled] {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
+    color: rgb(241, 238, 3);
   }
-
+  @media (max-width: 690px) {
+    .card {
+      color: rgb(100, 163, 247);
+    }
+    
   #password {
     font-size: 1rem;
   }
@@ -135,5 +141,6 @@ button[disabled] {
 @media (max-width: 500px) {
   .btn {
     font-size: 0.8rem;
+  
   }
 }
