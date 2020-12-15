@@ -32,8 +32,8 @@ var password= "";
       var passUpperCase = confirm ('Do you want "UPPER case" in your password? Press OK to confirm and cancel to not include. ');
       var passNumber = confirm ('Do you want "numbers" in your password? Press OK to confirm and cancel to not include.');
       var passCharacters = confirm ('Do you want "special characters" in your password? Press OK to confirm and cancel to not include.');
-          if (passLowerCase && passUpperCase && passNumber && passCharacters ===false) {
-            alert ("You must pick at least 1 criteria")
+          if ((passLowerCase && passUpperCase && passNumber && passCharacters) === false) {
+            alert ("You must pick at least 1 criteria");
             return generatePassword();
           }
       }

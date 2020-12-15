@@ -128,7 +128,7 @@ button[disabled] {
     padding: 10px 15px;
     color: rgb(241, 238, 3);
   }
-  @media (max-width: 690px) {
+  @media (max-width: 768px) {
     .card {
       color: rgb(100, 163, 247);
     }
