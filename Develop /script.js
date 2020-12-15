@@ -1,11 +1,8 @@
 
 var passLowerCase= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var passUpperCase= ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-  // var passUpperCase= [ABCDEFGHIJKLMNOPQRSTUVWZYZ];
-  
-  var passNumber= ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-  // var passCharacters = ["$", "%", "&", "+", ",", "-", "."];
-  var passCharacters=  [ "!", "'", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", ":", ";", "<", "=", ">", "?", "@", "[", "^", "|",]
+var passNumber= ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+var passCharacters=  [ "!", "'", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", ":", ";", "<", "=", ">", "?", "@", "[", "^", "|",]
 
 var generateBtn = document.querySelector("#generate");
 
@@ -18,10 +15,6 @@ function writePassword() {
 }
 var password= "";
 
-// Ask the user for details and return a string
-// function generatePassword() {
-  // Prompts and Confirm password guidelines 
-  // document.querySelector('#generate').addEventListener('click', generatePassword);
   function generatePassword() {
       var passLength = parseInt (prompt("How long do you want your password to be? Pick from 8- 128 characters"));
       // if else statement needs to go after passLength or will not work for within 8-128. 
@@ -60,25 +53,25 @@ var password= "";
     i++;
   } 
   password= password.slice (0,passLength);
-  console.log (password);
+  // console.log (password);
  }
 } //end generate loop 
 
     function randomLower () {
       var randomPassword = passLowerCase [Math.floor(Math.random() * passLowerCase.length)];
-      console.log (randomPassword);
+      // console.log (randomPassword);
       return randomPassword; 
     }
 
     function randomUpper() {
       var randomPassword = passUpperCase [Math.floor(Math.random() * passUpperCase.length)];
-      console.log (randomPassword);
+      // console.log (randomPassword);
       return randomPassword;
     }
     
     function randomNumber() {
       var randomPassword = passNumber [Math.floor(Math.random() * passNumber.length)];
-      console.log (randomNumber);
+      // console.log (randomNumber);
       return randomPassword; 
     }
     function randomSymbol() {
@@ -86,12 +79,11 @@ var password= "";
       console.log (randomSymbol);
       return randomPassword;
     }
-
   generateBtn.addEventListener("click", writePassword);
 
 
     // __________________________________________________________________________________
-    // MY hard work adn mistakes*************************************************
+    // MY hard work and mistakes*************************************************
     // 
   // Write password to the #password input
   // function writePassword( passLength, passLowerCase, passUpperCase, passNumber, passCharacters) {
