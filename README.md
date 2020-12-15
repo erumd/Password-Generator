@@ -8,8 +8,6 @@ I created an application that an employee can use to generate a random password 
 
 The following image shows the web application's appearance and functionality:
 
-Password generator demo
-
 <img src= "images/passgen.jpg" alt= "webpage view" width= "400" height="200">
 <p>
 <img src = "images/passgen2.jpg" alt= "small screen view" width= "100" height="150"> 
