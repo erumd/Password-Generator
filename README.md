@@ -22,7 +22,7 @@ The following image shows the web application's appearance and functionality:
 
 
 
-I used Visual Studio code to build the application. Resources I used to help with write proper functioning code are Stackoverflow, w3schools, and MDN developer mozilla. I used list of Password Special Characters from the OWASP Foundation] https://www.owasp.org/index.php/Password_special_characters. I would also like to thank my classmates for doing a study group to help each other out. I could not have done completed this assignment without them. 
+I used Visual Studio code to build the application. Resources I used to help with write proper functioning code are Stackoverflow, w3schools, and MDN developer mozilla. I used list of Password Special Characters from the OWASP Foundation] https://www.owasp.org/index.php/Password_special_characters. I would also like to thank my classmates (Tony, Joseph, and Will) for doing a study group to help us out. I could not have done completed this assignment without them. 
 
 
 - - -
