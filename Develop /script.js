@@ -76,7 +76,7 @@ var password= "";
     }
     function randomSymbol() {
       var randomPassword = passCharacters [Math.floor(Math.random() * passCharacters.length)];
-      console.log (randomSymbol);
+      // console.log (randomSymbol);
       return randomPassword;
     }
   generateBtn.addEventListener("click", writePassword);
