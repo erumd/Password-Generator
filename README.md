@@ -1,7 +1,7 @@
 # 03 JavaScript: Password Generator
 
 ## About the project 
-I created an application that an employee can use to generate a random password length of 8-128. It prompts the user to select if they would like lower, upper, number, and/or special characters in their password. The page is responsive and works on different screen sizes. I used HTMl, CSS, and JavaScript to make this application.
+I created an application that can used to generate a random password length of 8-128. It prompts the user to select lower, upper, number, and/or special characters in their password. The page is responsive and works on different screen sizes. I used HTMl, CSS, and JavaScript to make this application.
 
 
 ## Mock-Up
